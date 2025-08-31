@@ -14,3 +14,6 @@ add_executable(syncpad-cli ui_cli/cli_main.cpp core/common.hpp)
 find_package(FLTK REQUIRED)
 add_executable(syncpad-gui ui_gui/gui_main.cpp core/common.hpp)
 target_link_libraries(syncpad-gui PRIVATE fltk)
+
+# Tests
+add_executable(test-doc tests/test_doc.cpp core/document.cpp core/crc32.cpp)

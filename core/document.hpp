@@ -19,10 +19,11 @@ struct Op {
 };
 
 class Document {
+public:
     std::string content;
     uint64_t next_seq = 1;
 
-public:
+
     Document() = default;
 
     const std::string& get() const { return content; }
