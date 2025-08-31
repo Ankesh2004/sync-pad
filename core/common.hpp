@@ -21,14 +21,14 @@ inline Options parse_args(int argc,char** argv){
         if(arg == "--help" || arg == "-h"){
             opt.help = true;
         }
-        else if(arg == "role" && (i+1)<argc){
-            opt.role = arg[++i];
+        else if(arg == "--role" && (i+1)<argc){
+            opt.role = argv[++i];
         }
-        else if(arg == "host" && (i+1)<argc){
-            opt.host = arg[++i];
+        else if(arg == "--host" && (i+1)<argc){
+            opt.host = argv[++i];
         }
-        else if(arg == "port" && (i+1)<argc){
-            opt.port = arg[++i];
+        else if(arg == "--port" && (i+1)<argc){
+            opt.port = std::stoi(argv[++i]);
         }
     }
     return opt;
