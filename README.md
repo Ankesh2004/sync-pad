@@ -19,3 +19,6 @@ sync-pad/
 - **ui_cli/**: Command-line interface application for terminal-based editing and viewing.
 - **ui_gui/**: Graphical user interface application using FLTK framework.
 - **common/**: Platform-specific helpers for sockets and terminal controls supporting POSIX and Windows.
+
+### Prerequsities
+- FLTK
