@@ -3,6 +3,11 @@
 #include <FL/Fl_Window.H>
 #include <FL/Fl_Box.H>
 
+inline void print_help(const char* prog) {
+    std::cout << "Usage: " << prog 
+              << " --role [writer|reader] --host <peer_host> --port <port>\n";
+}
+
 int main(int argc, char** argv) {
     Options opt = parse_args(argc, argv);
 

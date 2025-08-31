@@ -34,7 +34,7 @@ inline Options parse_args(int argc,char** argv){
     return opt;
 }
 
-inline void print_help(const char* prog) {
-    std::cout << "Usage: " << prog 
-              << " --role [writer|reader] --host <peer_host> --port <port>\n";
-}
+// inline void print_help(const char* prog) {
+//     std::cout << "Usage: " << prog 
+//               << " --role [writer|reader] --host <peer_host> --port <port>\n";
+// }
