@@ -1,4 +1,5 @@
 # sync-pad Directory Structure
+```
 sync-pad/
 ├── core/
 │ ├── engine.hpp/.cpp # Doc model, op log, apply/serialize
@@ -11,7 +12,7 @@ sync-pad/
 │ └── gui_main.cpp # FLTK/Qt main, notepad widget, status bar
 └── common/
 └── platform.hpp # POSIX/Win socket shims, termios helpers
-
+```
 ### Description
 
 - **core/**: Contains core syncing engine modules including document model, operation log, network transport, discovery, and storage management.
